@@ -3,17 +3,17 @@ mport random
 
 zfz=random.randint(0,100) #zfz:Zufallszahl
 
-print("Errate eine Zahl, die zwischen 0 und 100 liegt:")
+print("Rate eine Zahl, die zwischen 0 und 100 liegt:")
 
 while True:
 
 eingabe = input()
 if zfz < int(eingabe):
-    print("Die Zahl ist kleiner")
+    print("Die gesuchte Zahl ist noch kleiner.")
 
 if zfz > int(eingabe):
-        print("Die Zahl ist großer")
+        print("Die gesuchte Zahl ist noch größer.")
 
 elif zfz == int(eingabe):
-        print("Glückwusch, das war richtig!!")
+        print("Glückwusch, das war richtig!")
         break
