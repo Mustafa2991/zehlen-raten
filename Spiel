@@ -1,5 +1,5 @@
 # zehlen-raten
-mport random
+import random
 
 zfz=random.randint(0,100) #zfz:Zufallszahl
 
