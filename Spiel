@@ -1,19 +1,17 @@
 # zehlen-raten
 import random
-
 zfz=random.randint(0,100) #zfz:Zufallszahl
 
 print("Rate eine Zahl, die zwischen 0 und 100 liegt:")
 
 while True:
+    eingabe = input()
+    if zfz < int(eingabe):
+        print("Die gesuchte Zahl ist kleiner")
 
-eingabe = input()
-if zfz < int(eingabe):
-    print("Die gesuchte Zahl ist noch kleiner.")
+    if zfz > int(eingabe):
+            print("Die gesuchte Zahl ist größer")
 
-if zfz > int(eingabe):
-        print("Die gesuchte Zahl ist noch größer.")
-
-elif zfz == int(eingabe):
-        print("Glückwusch, das war richtig!")
-        break
+    elif zfz == int(eingabe):
+            print("Glückwusch, das war richtig!!")
+            break
